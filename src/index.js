@@ -1,3 +1,6 @@
-import express from "express";
-cosnt = app = express()
-console.log('server listen on port',3000)
+import app from "./app";
+import './database';
+
+app.listen(app.get("port"));
+
+console.log("Server on port", app.get('port'));
